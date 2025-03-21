@@ -77,7 +77,7 @@ let pElegir = document.querySelectorAll("p");
 let iteradorNumeroAnimado = 0;
 let numeroRandom = 0;
 
-function adivinar() {
+const adivinar =  () => {
     numeroRandom = Math.round(Math.random() * 10);
     let dato = parseInt(input.value);
 
@@ -92,7 +92,7 @@ function adivinar() {
         paragraph2.style.fontSize = "3em";
     }
     setTimeout( "ganastePerdiste()",13000);
-   
+
 }
 
 //verifica que sean numeros del 1 al 10 regresa true
@@ -104,7 +104,7 @@ function verificarnumeros(dato) {
 
 
 function ganastePerdiste() {
-   
+
      let   numeber = (numeroRandom == parseInt(input.value))?" ganaste" : " perdiste ";
    paragraph2.innerText = numeber
     paragraph2.style.color = "orange";
@@ -133,17 +133,17 @@ function numeroAnimadoParar() {
     }
 }
 
-function rotarDardo(){
+const rotarDardo = () => {
     const dardo = document.querySelector("img");
     dardo.className = "rotar"+ numeroRandom;
     ;
-    
+
 }
 
-function rotarDardoInicial(){
+const rotarDardoInicial = () =>{
     const dardo = document.querySelector("img");
     dardo.className = "rotarInicial";
-  
+
 }
 
 button.addEventListener("click", adivinar);
