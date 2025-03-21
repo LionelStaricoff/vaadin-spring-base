@@ -91,28 +91,28 @@ const adivinar =  () => {
        paragraph2.style.color = "red";
         paragraph2.style.fontSize = "3em";
     }
-    setTimeout( "ganastePerdiste()",13000);
+    setTimeout( ganastePerdiste,13000);
 
 }
 
 //verifica que sean numeros del 1 al 10 regresa true
-function verificarnumeros(dato) {
+const verificarnumeros = (dato)=> {
     let pattern =[1,2,3,4,5,6,7,8,9,10];
     let result = pattern.includes(dato);
     return result;
 }
 
 
-function ganastePerdiste() {
+const ganastePerdiste = ()=> {
 
      let   numeber = (numeroRandom == parseInt(input.value))?" ganaste" : " perdiste ";
    paragraph2.innerText = numeber
     paragraph2.style.color = "orange";
 }
 
-function numeroAnimado() {
+const numeroAnimado = ()=> {
     paragraph1.innerText = iteradorNumeroAnimado++;
-    const myTimeout = setTimeout("numeroAnimado()", 500);
+    const myTimeout = setTimeout(numeroAnimado, 500);
     if (iteradorNumeroAnimado > 10) {
         clearTimeout(myTimeout);
 
@@ -122,10 +122,10 @@ function numeroAnimado() {
     }
 }
 
-function numeroAnimadoParar() {
+const numeroAnimadoParar = ()=> {
 
     paragraph1.innerText = iteradorNumeroAnimado--;
-    const myTimeout2 = setTimeout("numeroAnimadoParar()", 1000);
+    const myTimeout2 = setTimeout(numeroAnimadoParar, 1000);
     if (iteradorNumeroAnimado < numeroRandom) {
 
         clearTimeout(myTimeout2);
