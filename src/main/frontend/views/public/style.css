@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 2s; 
+    font-family: 'Lumanosimo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ } 
+ 
+ 
+ body{
+    background: linear-gradient(red,blue, aqua);
+  
+  }
+  
+
+  div{
+    width: min(30em, 100%);
+    height: min(100%,60em);
+    background-color: hsl(180, 100%, 50%, 10%);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1em auto;
+    overflow: hidden;
+   
+   
+}
+
+p{
+    color: antiquewhite;
+    
+    font-size: 2em;
+    text-shadow: 5px 5px 5px black;
+}
+
+input, button{
+    font-size: 3em;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+
+}
+
+button:hover{
+    background-color: rgb(138, 43, 226,60%);
+    text-shadow: 5px 5px 5px blue;
+    box-shadow: 5px 5px 5px blue;
+    color: rgba(255, 255, 255, 0.884);
+   
+}
+
+div:last-child{
+    width: 20em;
+    height: 20em;
+    background: url(./images/fondo.png) ;
+    background-size: cover;
+    text-align: center;
+    padding-top: 8em;
+   
+}
+
+div div img{
+    width: 50%;
+    object-fit: cover;
+    transform: rotate(-630deg);
+}
+
+/* Clases para rotar dardo
+*/
+.rotarInicial{
+    transform: rotate(-630deg);
+}
+
+.rotar1{
+    transform: rotate(450deg);
+}
+
+.rotar2{
+    transform: rotate(130deg);
+}
+
+.rotar3{
+    transform: rotate(160deg);
+}
+
+.rotar4{
+    transform: rotate(200deg);
+}
+.rotar5{
+    transform: rotate(230deg);
+}
+.rotar6{
+    transform: rotate(270deg);
+}
+.rotar7{
+    transform: rotate(310deg);
+}
+.rotar8{
+    transform: rotate(340deg);
+}
+.rotar9{
+    transform: rotate(380deg);
+}
+
+.rotar10{
+    transform: rotate(420deg);
+}
